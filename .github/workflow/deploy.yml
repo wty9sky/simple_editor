@@ -35,6 +35,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # 此处修改为你的Secret名称
           folder: dist                         # 部署的目录
           branch: gh-pages                     # 部署到哪个分支

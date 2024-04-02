@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  page: write
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -46,5 +47,5 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           folder: dist                         # 部署的目录
-          branch: gh-pages                     # 部署到哪个分支
+          branch: pages                     # 部署到哪个分支
           clean: true
